@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --webkit-font-smoothing: antialiased;
+  --moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  animation: Appear 400ms;
+  
+}
+
+.app {
+  background: #eaeaea;
+  text-align: center;
+  margin-top: auto 0;
+  padding: 8rem 8rem;
+  max-width: 100%;
+  height: 100%;  
+}
+
+.recipe-container {
+  border-radius: 1rem;
+  padding: 3.2rem 4.3rem;
+  background: #ffffff;
+  animation: FadeInBottom 400ms;
+}
+
+h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #1b1b1b;
+  margin-bottom: 2.9rem;
+  text-transform: uppercase;
+}
+
+img {
+  border-radius: 1rem;
+  width: 100%;
+  height: 25rem;
+  object-fit: cover;
+}
+
+img:hover {
+  transition: 1s;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+figcaption {
+  text-align: right;
+  color: gray;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #1b1b1b;
+  line-height: 10rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+ul,
+li,
+ol,
+p {
+  font-size: 1.6rem;
+  color: black;
+  line-height: 4.5rem;
+  text-align: left;
+}
+
+footer,
+a {
+  font-size: 1.6rem;
+  margin-top: 2.9rem;
+  text-align: center;
+  background: #eaeaea;
+  text-decoration: none;
+  color: gray;
+}
+
+footer {
+  margin-top: 8rem;
+}
+
+
+
+
+@keyframes Appear {
+  0% {
+    opacity: 0;
+    transform: translateY(8rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes FadeInBottom {
+  from {
+    opacity: 0;
+    transform: translateY(-5rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
